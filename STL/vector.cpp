@@ -72,7 +72,7 @@ int main()
     vector<int>::iterator it; // Now 'it' is an iterator that can point to a vector with int data type
     // Iterator can point to any element of any container, hence resolve the scope. 
     // You can use auto instead.
-    for(it=v6.begin();it!=v6.end();it++){
+    for(it=v6.begin();it!=v6.end();it++){   //Bidirectional iterator.
         cout<<*it<<" ";
     }cout<<endl;
 
@@ -133,8 +133,8 @@ int main()
       bool empty()const- Returns True if vector has no elements, False otherwise
       iterator erase(iterator loc)- Deletes element at location loc
       iterator erase(iterator start, iterator end)- Deletes elements from start to end (start location is inclusive while end location is exclusive)*/ 
-    v5.clear();
-    cout<<v5.empty()<<endl;
+    v5.clear();// Indirectly v5 becomes empty. Unfortunately contents will still be present and you can access them with [] operator. Similar to Queue - Circular array implementation
+    cout<<v5.empty()<<endl; 
     v6.erase(v6.begin()+2); //erases v6[2]
     cout<<v6[0]<<" "<<v6[1]<<" "<<v6[2]<<endl;
     v6.erase(v6.begin(),v6.begin()+2); //erases v6[0],v6[1];
