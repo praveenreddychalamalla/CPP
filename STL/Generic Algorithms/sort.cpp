@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 /* Generic Algorithms - Created on iterators (Random Access iterators), 
-   Any container which support random access iterators can make use of generic algorithms.
+   Any container which support random access iterators can make use of generic algorithms. Pointers are equivalent to random access iterators.
 
    template<class RandomAccessIterator>
    void sort (RandomAccessIterator first,RandomAccessIterator last) ; Elements are compared using < operator
