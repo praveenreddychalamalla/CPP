@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 /*
-    unique_copy() operates in out of place manner. 
+    unique_copy() does not operate in place manner. 
     Takes a Location where the elements have to be reflected after applying unique(), without modifying the passed container.
 
     unique_copy() works same as that of unique

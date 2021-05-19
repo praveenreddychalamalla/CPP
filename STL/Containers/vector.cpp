@@ -89,13 +89,13 @@ int main()
     /*iterator insert(iterator loc, const TYPE& val)- Inserts val before loc and returns an iterator pointing to element inserted.
       void insert(iterator loc, size_type num, const TYPE& val)- Inserts num copies of val before loc.
       void insert(iterator loc, iterator start, iterator end)- Inserts the elements from start to end before loc*/
-    v5.insert(v5.end(),5);  //Inserts 5 at the end of vector
+    v5.insert(v5.begin(),5);  //Inserts 5 at the beginning of vector
     v5.insert(v5.end(),3,6);    //Inserts 3 copies of 6 at the end vector
-    v5.insert(v5.end(),v6.begin(),v6.end());  //Inserts all the elemnts of v6 at the end of v5
+    v5.insert(v5.end(),v6.begin(),v6.end());  //Inserts all the elements of v6 at the end of v5
     for(it=v5.begin();it!=v5.end();it++)cout<<*it<<" ";
     cout<<endl;
 
-    //size() ,resize() & max_size() functions - Generic Algorithms
+    //size() ,resize() & max_size() functions.
 
     /* size_type size() const - Returns the no.of elements present in the vector(Container)
        void resize(size_type num,const TYPE& val=TYPE()) - Resizes the vector(Container), so that only first num elements will be present
@@ -105,7 +105,7 @@ int main()
     cout<<v5.size()<<endl;
     for(it=v5.begin();it!=v5.end();it++)cout<<*it<<" ";
     cout<<endl;
-    cout<<"Maximum number of elements that can be present in vector = "<<v1.max_size()<<endl;
+    cout<<"Maximum number of elements that can be present in vector = "<<v1.max_size()<<endl; //Machine Dependent
 
     //capacity() & reserve() functions
     
@@ -115,9 +115,9 @@ int main()
     v5.reserve(10000);// Sets the capacity of v1 so that it can hold upto 100000 elements before allocating more space.
     cout<<"V5 can hold "<<v5.capacity()<<" elements now, before allocating more space"<<endl;
     
-    // swap() function - Operates in constant time . O(1) 
+    // swap() function - Operates in constant time . O(1) time for any container becuase internally iterators will be swapped):- 
 
-    //void swap(container& from) - exchhanges the elements of current vector with those of from
+    //void swap(container& from) - exchanges the elements of current vector with those of from
     v3.swap(v5);
     for(it=v5.begin();it!=v5.end();it++)cout<<*it<<" ";
     cout<<endl;
@@ -125,7 +125,8 @@ int main()
     // assign() function ( Not much important)
 
     /*  vector<int> v;
-        v.assign(3,4); Works same as vector<int>v(3,4); */
+        v.assign(3,4); Works same as vector<int>v(3,4); 
+        But assign can be used at anytime*/
 
     //clear(), erase() & empty() functions
 

@@ -32,7 +32,7 @@ int main(){
     cout<<endl;
 
     //v1.erase(it,v1.end()); also does the job.
-    v1.resize(it-v1.begin()); // To be safe side erase the unspecified locations of the container.
+    v1.resize(it-v1.begin()); // Erasing the locations of container with unspecified state .
     for(int i=0;i<v1.size();i++)cout<<v1[i]<<" ";
     cout<<endl;
 
