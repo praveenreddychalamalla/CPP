@@ -12,8 +12,8 @@ using namespace std;
     template<class InputIterator1 class InputIterator2,class OutputIterator, class BinaryOperation>
     OutputIterator transform(InputIterator1 first1, InputIterator1 last1,InputIterator2 first2, OutputIterator result, BinaryOperation binary_op);
 
-    In case of transform() with binary opertion, each time 2 elements are drawn - 1 from first1, 1 from first2 and the result of binary operation 
-    on them is pasted at result.
+    In case of transform() with binary opertion, each time 2 elements are drawn ----- 1 from first1, 1 from first2 and the result of binary operation 
+    on them is pasted at result and iterators are incremented.
 
     Output iterator is returned pointing to the element that follows the  last element written in the result sequence.
     Most of the time we don't require to catch the returned Output iterator

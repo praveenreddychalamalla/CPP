@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-//Iteratos bridge the gap between conatiners and algorithms
+//Iteratos bridge the gap between containers and algorithms
 
 /*Iterators provide a means for accessing data stored in container classes like vector, map, list, etc.
   We can access the element by deferencing  the iterator with a *. just as you would do with pointers

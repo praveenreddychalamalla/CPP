@@ -5,6 +5,10 @@ using namespace std;
     Vector is a class template. Vector contains elements stored as an array
     Accessing member - O(1), append element - O(1), search specific element - O(n), insertion - O(n)
 */
+void displayVector(const vector<int>& v){
+  for(int i=0;i<v.size();i++)cout<<v[i]<<" ";
+  cout<<endl;
+}
 int main()
 {
     //VECTOR CONSTRUCTORS
@@ -92,8 +96,7 @@ int main()
     v5.insert(v5.begin(),5);  //Inserts 5 at the beginning of vector
     v5.insert(v5.end(),3,6);    //Inserts 3 copies of 6 at the end vector
     v5.insert(v5.end(),v6.begin(),v6.end());  //Inserts all the elements of v6 at the end of v5
-    for(it=v5.begin();it!=v5.end();it++)cout<<*it<<" ";
-    cout<<endl;
+    displayVector(v5);
 
     //size() ,resize() & max_size() functions.
 
@@ -103,8 +106,7 @@ int main()
     cout<<v5.size()<<endl;
     v5.resize(6);
     cout<<v5.size()<<endl;
-    for(it=v5.begin();it!=v5.end();it++)cout<<*it<<" ";
-    cout<<endl;
+    displayVector(v5);
     cout<<"Maximum number of elements that can be present in vector = "<<v1.max_size()<<endl; //Machine Dependent
 
     //capacity() & reserve() functions
@@ -119,8 +121,7 @@ int main()
 
     //void swap(container& from) - exchanges the elements of current vector with those of from
     v3.swap(v5);
-    for(it=v5.begin();it!=v5.end();it++)cout<<*it<<" ";
-    cout<<endl;
+    displayVector(v5);
 
     // assign() function ( Not much important)
 

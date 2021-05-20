@@ -3,11 +3,15 @@
 using namespace std;
 /*
     Lists will have Bi-directional iterators 
-    Lists don't suppport random access iterators. You should not use sth like list[5].
-    Hence we cannot perform arithmetic like it+k or it-k on iterators to lists.
+    Lists don't suppport random access iterators.
+    Hence we cannot perform arithmetic like it+k or it-k on iterators to lists. You should not use sth like list[5].
     Lists are sequences of elements stored in a linked list.
     Compared to vectors, they allow fast insertions and deletions, but doesn't support random access
 */
+void displayList(const list<int>& l){
+    for(auto it=l.begin();it!=l.end();it++) cout<<*it<<" ";
+    cout<<endl;
+}
 int main(){
 
     //LIST CONSTRUCTORS
@@ -71,10 +75,10 @@ int main(){
 
     //iterator begin()- Returns an iterator pointing to the first element of list.
     //***iterator end()- Returns an iterator pointing to past the last element of list***
-    list<int>::iterator it; // Now 'it' is an iterator that can point to a list with elements of int data type
+    list<int>::iterator it; // Now 'it' is an iterator that can point to a list with elements of int data type. Bidirectional iterator.
     // Iterator can point to any element of any container, hence resolve the scope. 
     // You can use auto instead.
-    for(it=l6.begin();it!=l6.end();it++){   //Bidirectional iterator.
+    for(it=l6.begin();it!=l6.end();it++){   
         cout<<*it<<" ";
     }cout<<endl;
 
@@ -94,8 +98,7 @@ int main(){
     l5.insert(l5.begin(),5);  //Inserts 5 at the beginning of list
     l5.insert(l5.end(),3,6);    //Inserts 3 copies of 6 at the end of list 
     l5.insert(l5.end(),l6.begin(),l6.end());  //Inserts all the elements of l6 at the end of l5
-    for(it=l5.begin();it!=l5.end();it++)cout<<*it<<" ";
-    cout<<endl;
+    displayList(l5);
 
     //size() ,resize() & max_size() functions.
 
@@ -105,16 +108,14 @@ int main(){
     cout<<l5.size()<<endl;
     l5.resize(6);
     cout<<l5.size()<<endl;
-    for(it=l5.begin();it!=l5.end();it++)cout<<*it<<" ";
-    cout<<endl;
+    displayList(l5);
     cout<<"Maximum number of elements that can be present in List = "<<l1.max_size()<<endl; //Machine Dependent
 
     // swap() function - Operates in constant time . O(1) time for any container becuase internally iterators will be swapped ):-
 
     //void swap(container& from) - exchanges the elements of current vector with those of from
     l3.swap(l5);
-    for(it=l5.begin();it!=l5.end();it++)cout<<*it<<" ";
-    cout<<endl;
+    displayList(l5);
 
     // assign() function 
 
@@ -123,6 +124,7 @@ int main(){
         The assign() function either gives the current list the values form start to end or gives it num copies of val.
     */
     l5.assign(3,4);// l5={4,4,4}
+    displayList(l5);
 
     //clear(), erase() & empty() functions
 
@@ -134,9 +136,7 @@ int main(){
     cout<<l5.empty()<<endl;
     l6.erase(l6.begin()); //Iterator pointing to element which has to be deleted should be passed.
 
-    for(it=l6.begin();it!=l6.end();it++){   //Bidirectional iterator.
-        cout<<*it<<" ";
-    }cout<<endl;
+    displayList(l6);
 
     l6.erase(l6.begin(),l6.end());
     
