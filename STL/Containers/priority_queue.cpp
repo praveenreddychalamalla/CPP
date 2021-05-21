@@ -4,8 +4,8 @@ using namespace std;
 /*  
     Note: Iterators cannot be created for priority queues. Queues & Stacks doesn't support any kind of iterators.
 
-    Unlike Vectors or lists, in Queue, front will be pointing to end and back will be pointing to beginning.  
-    Elements are pushed from back(beginning) and popped from front (end)
+    Unlike Vectors or lists, in Queue containers(Stack, Queue, Priority Queue, DeQueue), 
+    front will be pointing to end and back will be pointing to beginning.  Elements are pushed from back(beginning) and popped from front (end)
     Assuming an imaginary linear container, elements are pushed from left and popped from right
     Priority queues are internally implemented as heaps.
 
@@ -42,6 +42,7 @@ void displayQueue( priority_queue<T,vector<T>,Comparator> q){
 }
 int main(){
     priority_queue<int> pq1; //Default Priority = ELement with larger value has high priority. Max heap will be implemented
+
     //PRIORITY  QUEUE FUNCTIONS
     
     //push(), pop(), top(), empty() functions
@@ -60,6 +61,13 @@ int main(){
 
     //size_type size()const; Returns the number of elements in the priority queue. Mostly we don't use size() for priority queues ):-
     cout<<pq1.size()<<endl;
+
+    //swap() function
+
+    priority_queue<int> pq;
+    pq.push(1);pq.push(2);pq.push(3);
+    pq.swap(pq1); //Swaps the containers.
+    displayQueue(pq1);
 
     //PRIORITY QUEUE with comparator.
     /*Unlike vectors priority queue has a restriction that the comparator has to be of class type in which operator () is overloaded
