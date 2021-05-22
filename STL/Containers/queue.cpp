@@ -3,7 +3,7 @@
 using namespace std;
 /*  
     Queues doesn't support any kind of iterataors
-    Unlike Vectors or lists, in Queue containers(Stack, Queue, Priority Queue, DeQueue), 
+    Unlike Vectors or lists, in Queue containers(Stack, Queue, Priority Queue), 
     front will be pointing to end and back will be pointing to beginning.  Elements are pushed from back(beginning) and popped from front (end)
     Assuming an imaginary linear container, elements are pushed from left and popped from right
 */
@@ -35,7 +35,7 @@ int main(){
     
     //QUEUE FUNCTIONS
 
-    //push(), pop(), top(), empty() functions
+    //push(), pop(), front(), empty() functions
 
     /*void push(const TYPE& val); Inserts element into the queue
       void pop(); Removes the top most element in the queue

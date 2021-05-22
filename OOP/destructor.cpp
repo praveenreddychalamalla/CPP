@@ -5,7 +5,7 @@ using namespace std;
   ~classname(){
   }
   Destructor does not have arguments, no return type (Not even void)
-  Destructor should be declared in the public section and cannot be declared as static or const
+  Destructor should be declared in the public section only and cannot be declared as static or const
   You cannot access the address of destructor
   There can be only one destructor in a class
 
