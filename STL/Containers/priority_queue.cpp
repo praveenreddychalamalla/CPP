@@ -70,7 +70,7 @@ int main(){
     displayQueue(pq1);
 
     //PRIORITY QUEUE with comparator.
-    /*Unlike vectors priority queue has a restriction that the comparator has to be of class type in which operator () is overloaded
+    /*Unlike vectors priority queue has a restriction that the comparator has to be of type class in which operator () is overloaded
       Initialization of priority queue with comparator requires a container also (You should specify where elements have to sit) 
       Container data type should be same as that of priority queue.*/
 

@@ -27,7 +27,8 @@ int main(){
 
     //In pairs <, >, are overloaded with first member by default.
     // == returns true only if both the values of pair are equal
-    if(p3==p4)cout<<"Equal"<<endl;
+    
+    if(p3==p4)cout<<"Equal"<<endl; //cout << p3==p4; results error.
     if(p3<p6)cout<<"Less than or equal to"<<endl;
     cout<<p3.first<<" "<<p3.second<<"";
   
