@@ -73,7 +73,7 @@ int main(){
     Notice that this always increases the container size by one, even if no mapped value is assigned to the element 
     (the element is constructed using its default constructor).*/
     cout<<m1['g']<<" "<<m1['q']<<" "<<m1['s']<<endl; 
-
+    cout<<m1.size()<<endl;
     display(m1);
 
     //MAP OPERATIONS - find, count(Useful for multimaps), lower_bound, upper_bound
