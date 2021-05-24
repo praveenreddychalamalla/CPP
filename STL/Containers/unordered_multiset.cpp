@@ -8,8 +8,7 @@
 #define FOR(i,a,b) for(int i=(a);i<(b);i++)
 /*
     Unordered sets support only forward iterartors.
-    
-    
+    unordered_multisets are same as unordered sets except that these allow different elements to have equivalent value
 */
 using namespace std;
 
@@ -29,32 +28,32 @@ int main(){
     //SET FUNCTIONS
 
     //Modifer functions: insert(), erase(), swap(), clear().
-    unordered_multiset<int>s1,s2;
-    s1.insert({1,2,3,1,2,3,1,1});
-    s2.insert(s1.begin(),s1.end());
-    for(auto i: s1)cout<<i<<" "; //Some times you may get some order, but ignore the order if any appears. It all depends on the hash values
+    unordered_multiset<int>s3,s4;
+    s3.insert({1,2,3,1,2,3,1,1});
+    s4.insert(s3.begin(),s3.end());
+    for(auto i: s3)cout<<i<<" "; //Some times you may get some order, but ignore the order if any appears. It all depends on the hash values
     cout<<endl;
     
-    auto it=s1.find(4);
-    if(it==s1.end()) cout<<"Not found!"<<endl;
+    auto it=s3.find(4);
+    if(it==s3.end()) cout<<"Not found!"<<endl;
     else cout<<*it<<endl;
 
-    cout<<s1.count(3)<<endl;
+    cout<<s3.count(3)<<endl;
 
-    auto it1=s1.equal_range(1); //Return type of equal_range is a pair.
+    auto it1=s3.equal_range(1); //Return type of equal_range is a pair.
     while(it1.F!=it1.S){ //Iterating between he bounds
         cout<<*it1.F++<<" ";
     }cout<<endl;
 
-    s1.erase(3); //Not only one instance, all the elements with key==3 will be erased.
-    s1.swap(s2);
-    s1.clear();
-    for(auto i: s2)cout<<i<<" "; 
+    s3.erase(3); //Not only one instance, all the elements with key==3 will be erased.
+    s3.swap(s4);
+    s3.clear();
+    for(auto i: s4)cout<<i<<" "; 
     cout<<endl;
 
      //empty(), size(), max_size() functions.
-    cout<<s1.size()<<" "<<s2.size()<<endl;
-    cout<<s1.empty()<<endl;
+    cout<<s3.size()<<" "<<s4.size()<<endl;
+    cout<<s3.empty()<<endl;
 
     return 0;
 }

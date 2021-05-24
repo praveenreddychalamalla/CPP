@@ -87,7 +87,7 @@ int main(){
 
     //Unlike vectors sets have a restriction that the comparator has to be of type class in which operator () is overloaded . 
     //Similar to that of priority queues
-    set<pi,comp>s4; //Sets expect the comparator has to be of type class i.e, object or instance of a class 
+    set<pi,comp>s4; //Sets expect the comparator to be of type class i.e, object or instance of a class 
     //In s4, elements will be arranged in ascending order as per second value of pairs.
     s4.insert(s3.begin(),s3.end());
 

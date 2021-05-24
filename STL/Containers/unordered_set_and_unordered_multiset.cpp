@@ -32,7 +32,7 @@ int main(){
     */
 
 
-    //SET FUNCTIONS
+    //UNORDERED SET FUNCTIONS
 
     //Modifer functions: insert(), erase(), swap(), clear().
     unordered_set<int>s1,s2;
@@ -54,6 +54,35 @@ int main(){
      //empty(), size(), max_size() functions.
     cout<<s1.size()<<" "<<s2.size()<<endl;
     cout<<s1.empty()<<endl;
+
+    //UNORDERED MULTISET
+    cout<<endl<<"Unordered Multiset"<<endl;
+    unordered_multiset<int>s3,s4;
+    s3.insert({1,2,3,1,2,3,1,1});
+    s4.insert(s3.begin(),s3.end());
+    for(auto i: s3)cout<<i<<" "; //Some times you may get some order, but ignore the order if any appears. It all depends on the hash values
+    cout<<endl;
+    
+    it=s3.find(4);
+    if(it==s3.end()) cout<<"Not found!"<<endl;
+    else cout<<*it<<endl;
+
+    cout<<s3.count(3)<<endl;
+
+    auto it1=s3.equal_range(1); //Return type of equal_range is a pair.
+    while(it1.F!=it1.S){ //Iterating between he bounds
+        cout<<*it1.F++<<" ";
+    }cout<<endl;
+
+    s3.erase(3); //Not only one instance, all the elements with key==3 will be erased.
+    s3.swap(s4);
+    s3.clear();
+    for(auto i: s4)cout<<i<<" "; 
+    cout<<endl;
+
+     //empty(), size(), max_size() functions.
+    cout<<s3.size()<<" "<<s4.size()<<endl;
+    cout<<s3.empty()<<endl;
 
     return 0;
 }

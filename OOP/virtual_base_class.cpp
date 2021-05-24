@@ -46,13 +46,13 @@ class D2: public C4,public C5,public C6{ //Multiple + Multilevel Inheritance
 };
 int main(){
     D1 d1;
-    // In d1 there are 3 copies of attribute 'a' belonging to class C1,C2,C3
-    //Referring d1.a creates ambiguity to compiler and hence results error.
+    // In d1 there are 3 copies of attribute 'a' each belonging to class C1,C2,C3
+    //Referring d1.a creates ambiguity to compiler if you refer without resolving scope and hence results error.
     cout<<d1.C1::a<<endl; 
     cout<<d1.C2::a<<endl;
     cout<<d1.C3::a<<endl;
     // In d1 there are 3 copies of attribute 'x' all belonging to class B.
-    // You cannot resolve the scope to access the attribute X that is present in class B, 
+    // You cannot even resolve the scope to access the attribute X that is present in class B, 
     // Hence referring as d1.B::x also creates an error (Ambiguious). To overcome this problem inherit base class in virtual mode
     D2 d2;
      // In d2 there are 3 copies of attribute 'a' belonging to class C4,C5,C6 
