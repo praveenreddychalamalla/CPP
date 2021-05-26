@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 11-05-2021
+
+    This code demonstrates the the principle of Inheritance and functioning of constructors.
+*/
 #include<iostream>
 using namespace std;
 /* Whenever an objected is created for a derived class, 

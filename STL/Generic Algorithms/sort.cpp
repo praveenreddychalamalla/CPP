@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 15-05-2021
+
+    This code demonstrates the usage of sort function.
+*/
 #include<iostream>
 #include<algorithm>
 #include<vector>

@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 20-05-2021
+
+    This code demonstrates the usage of Stack Container.
+*/
 #include<iostream>
 #include<stack>
 using namespace std;

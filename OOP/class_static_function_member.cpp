@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 9-05-2021
+
+    This code demonstrates Static functions.
+*/
 #include<iostream>
 using namespace std;
 //By declaring a function member as static, you make it independent of any particular object of the class

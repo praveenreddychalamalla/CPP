@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 12-05-2021
+
+    This code demonstrates the concept of abstract class.
+*/
 #include<iostream>
 using namespace std;
 //Similar to abstract methods in JAVA.

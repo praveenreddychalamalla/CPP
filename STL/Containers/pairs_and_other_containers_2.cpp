@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 22-05-2021
+
+    This code demonstrates the usage of Pair container in combination with other containers.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 #define F first

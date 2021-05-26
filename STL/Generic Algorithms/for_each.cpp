@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 17-05-2021
+
+    This code demonstrates the usage of for_each function.
+*/
 #include<iostream>
 #include<algorithm>
 #include<vector>

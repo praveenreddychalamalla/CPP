@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 14-05-2021
+
+    This code demonstrates the usage of Vector Container.
+*/
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -143,4 +150,5 @@ int main()
     cout<<v6[0]<<endl;
 
     return 0;
-} 
+}
+ 

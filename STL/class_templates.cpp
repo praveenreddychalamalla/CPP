@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 13-05-2021
+
+    This code demonstrates the usage of class templates.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 //Sometimes you need a class implementation that is same in all classes but only the data types used are different.

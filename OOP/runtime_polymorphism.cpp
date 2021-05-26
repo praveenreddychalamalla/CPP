@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 11-05-2021
+
+    This code demonstrates the concept of run time polymorphism through method overriding.
+*/
 #include<iostream>
 using namespace std;
 //This method overriding demonstrates the run time polymorphism in c++

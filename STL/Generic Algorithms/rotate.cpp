@@ -1,5 +1,12 @@
 #include<iostream>
 #include<algorithm>
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 17-05-2021
+
+    This code demonstrates the usage of rotate function.
+*/
 #include<vector>
 using namespace std;
 /*

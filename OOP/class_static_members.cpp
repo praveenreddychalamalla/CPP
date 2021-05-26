@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 9-05-2021
+
+    This code demonstrates how static members of a class are different .
+*/
 #include<iostream>
 using namespace std;
 //No matter how many objects of a class are created, there will be only one copy of static member

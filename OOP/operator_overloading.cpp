@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 11-05-2021
+
+    This code demonstrates the concept of operator overloading - Compile time polymorphism.
+*/
 #include<iostream>
 using namespace std;
 // All unary and binary operators can be overloaded, except 5 operators 

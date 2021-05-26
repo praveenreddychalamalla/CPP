@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 10-05-2021
+
+    This code demonstrates Destructors.
+*/
 #include<iostream>
 using namespace std;
 /*Destructor is a special method invoked automatically when an object is deleted(Destroyed) or scope of an object ends.

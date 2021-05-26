@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 21-05-2021
+
+    This code demonstrates the usage of Deque Container.
+*/
 #include<iostream>
 #include<queue>
 #include<algorithm>
@@ -62,3 +69,4 @@ int main(){
     cout<<endl;
     return 0;
 }
+

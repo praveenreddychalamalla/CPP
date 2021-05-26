@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 11-05-2021
+
+    This code demonstrates the operator overloading of function call operator.
+*/
 #include<iostream>
 using namespace std;
 struct Linear{

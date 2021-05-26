@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 18-05-2021
+
+    This code demonstrates the usage of adjacent_find function.
+*/
 #include<iostream>
 #include<algorithm>
 #include<vector>

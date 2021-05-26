@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 11-05-2021
+
+    This code demonstrates principle of Inheritance.
+*/
 #include<iostream>
 using namespace std;
 class Base{

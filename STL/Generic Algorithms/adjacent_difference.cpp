@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 18-05-2021
+
+    This code demonstrates the usage of adjacent_difference function.
+*/
 #include<iostream>
 #include<numeric>
 using namespace std;
@@ -12,7 +19,7 @@ using namespace std;
 
     Returns an iterator pointing to past the last element of destination sequence (result). Return type can be caught if required
     Note: First element of the container will be copied at location result initially. 
-    From the container an element and its preceeding element are passed as first and second arguments respectively for the binaru function.
+    From the container an element and its preceeding element are passed as first and second arguments respectively for the binary function.
 */
 int fun1(int x, int y){
     return x%y;

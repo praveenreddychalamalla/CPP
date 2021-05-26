@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 12-05-2021
+
+    This code demonstrates virtual functions.
+*/
 #include<iostream>
 using namespace std;
 

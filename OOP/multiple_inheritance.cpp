@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 12-05-2021
+
+    This code demonstrates Multiple Inheritance.
+*/
 #include<iostream>
 using namespace std;
 // If there are any conflicts during multiple inheritance use the appropriate one by resolving the scope.

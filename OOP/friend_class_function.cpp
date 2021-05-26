@@ -1,3 +1,10 @@
+/**
+    DOCUMENTATION
+    Author: Praveen Reddy Chalamalla
+    Created on 10-05-2021
+
+    This code demonstrates the concept of friend functions.
+*/
 #include<iostream>
 using namespace std;
 //Friend function can be a function defined in global scope i.e., Normal external function
