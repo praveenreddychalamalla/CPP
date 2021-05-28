@@ -3,7 +3,7 @@
     Author: Praveen Reddy Chalamalla
     Created on 20-05-2021
 
-    This code demonstrates the usage of Stack Container.
+    This code demonstrates the usage of Priority_Queue Container.
 */
 #include<iostream>
 #include<queue>

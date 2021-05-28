@@ -1,7 +1,7 @@
 /**
-    DOCUMENTATION
-    Author: Praveen Reddy Chalamalla
-    Created on 9-05-2021
+  * DOCUMENTATION
+  * Author: Praveen Reddy Chalamalla
+  * Created on 9-05-2021
 */
 #include<iostream>
 using namespace std;
@@ -17,6 +17,8 @@ void student::info(){ //Scope Resolution - Inform compiler that this method is d
 }
 int main() {
 	student a,b;
+	//cout<<a.age<<endl; Instance variable (Variables of a class) is not initialized yet, hence contains garbage value 
+	//In java instance varibales are auto initialized to some defualt values depending on the type of variable
 	a.age=22;
 	a.name="Praveen Reddy";
 	b.age=24;

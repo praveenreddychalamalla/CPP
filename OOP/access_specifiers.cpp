@@ -1,9 +1,9 @@
 /**
-    DOCUMENTATION
-    Author: Praveen Reddy Chalamalla
-    Created on 10-05-2021
+  * DOCUMENTATION
+  * Author: Praveen Reddy Chalamalla
+  * Created on 10-05-2021
 
-    This code demonstrates the access specifiers.
+  * This code demonstrates the access specifiers.
 */
 #include<iostream>
 using namespace std;

@@ -1,9 +1,9 @@
 /**
-    DOCUMENTATION
-    Author: Praveen Reddy Chalamalla
-    Created on 12-05-2021
+  * DOCUMENTATION
+  * Author: Praveen Reddy Chalamalla
+  * Created on 12-05-2021
 
-    This code demonstrates the concept of abstract class.
+  * This code demonstrates the concept of abstract class.
 */
 #include<iostream>
 using namespace std;
