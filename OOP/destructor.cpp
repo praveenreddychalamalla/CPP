@@ -3,7 +3,7 @@
   * Author: Praveen Reddy Chalamalla
   * Created on 10-05-2021
 
-  * This code demonstrates Destructors.
+  * @desc This code demonstrates Destructors.
 */
 #include<iostream>
 using namespace std;

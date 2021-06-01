@@ -25,7 +25,7 @@ class Complex{
             a=x;b=y;
         }
         //Member Function overloading.
-        Complex operator +(Complex const &ob){ //operator is a keyword . You can escape const qualifier, but its a good practice to use.
+        Complex operator +(Complex const &ob){ //operator is a keyword. You can escape const qualifier, but its a good practice to use.
             Complex temp(a+ob.a,b+ob.b);
             return temp;
         }
