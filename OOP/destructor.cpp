@@ -1,22 +1,22 @@
 /**
-    DOCUMENTATION
-    Author: Praveen Reddy Chalamalla
-    Created on 10-05-2021
+  * DOCUMENTATION
+  * Author: Praveen Reddy Chalamalla
+  * Created on 10-05-2021
 
-    This code demonstrates Destructors.
+  * This code demonstrates Destructors.
 */
 #include<iostream>
 using namespace std;
-/*Destructor is a special method invoked automatically when an object is deleted(Destroyed) or scope of an object ends.
-  Destructor name is same as classname preceeded by tilde (~)       
-  ~classname(){
-  }
-  Destructor does not have arguments, no return type (Not even void)
-  Destructor should be declared in the public section only and cannot be declared as static or const
-  You cannot access the address of destructor
-  There can be only one destructor in a class
+/* Destructor is a special method invoked automatically when an object is deleted(Destroyed) or scope of an object ends.
+ * Destructor name is same as classname preceeded by tilde (~)       
+ * ~classname(){
+ * }
+ * Destructor does not have arguments, no return type (Not even void)
+ * Destructor should be declared in the public section only and cannot be declared as static or const
+ * You cannot access the address of destructor
+ * There can be only one destructor in a class
 
-  When the scope of objects expire their destructors are invoked in reverse of the order of their declarations.
+ * When the scope of objects expire their destructors are invoked in reverse of the order of their declarations.
 */
 class MyClass{
     int a;

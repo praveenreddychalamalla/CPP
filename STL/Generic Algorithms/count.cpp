@@ -1,9 +1,9 @@
 /**
-    DOCUMENTATION
-    Author: Praveen Reddy Chalamalla
-    Created on 15-05-2021
+  * DOCUMENTATION
+  * Author: Praveen Reddy Chalamalla
+  * Created on 15-05-2021
 
-    This code demonstrates the usage of count function.
+  * This code demonstrates the usage of count function.
 */
 #include<iostream>
 #include<algorithm>

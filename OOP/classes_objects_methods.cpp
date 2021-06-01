@@ -13,7 +13,7 @@ class student{
 		void info();//Declaration
 };
 void student::info(){ //Scope Resolution - Inform compiler that this method is declared in the scope of class student.
-	cout<<student::age<<" "<<student::name<<endl; //Resolve scope if you use any attributes of the class.
+	cout<<age<<" "<<name<<endl; //Need not to resolve scope again if you use any attributes of the same class.
 }
 int main() {
 	student a,b;
