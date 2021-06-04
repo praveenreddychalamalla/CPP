@@ -3,7 +3,7 @@
     Author: Praveen Reddy Chalamalla
     Created on 17-05-2021
 
-    This code demonstrates the usage of range based for lopp with containers.
+    @desc This code demonstrates the usage of range based for lopp with containers.
 */
 #include<iostream>
 #include<algorithm>
