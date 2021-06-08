@@ -33,6 +33,14 @@ using namespace std;
     Note: multiset is same as set except that it allows duplicates
     Elements in a set cannot be identified with indices or at() function, use value of element to access.
 */
+
+/**
+  * Warning: If you want to use the upper_bound or lower_bound funtion for a set, 
+  * then use the public member functions upper_bound and lower_bound of set. USE set.upper_bound(ele) or set.lower_bound(ele)
+  * These member functions works more efficiently than generic algorithms.
+  * Don't use the  upper_bound and lower_bound functions (Generic Algorithms) in std namespace. 
+  * DON'T USE upper_bound(set.begin(),set.end(),ele), lower_bound(set.begin(),set.end(),ele). If used, you might stuck in TLE scenario
+*/
 class comp{
     public:
     // bool operator ()(pi& a, pi& b) resulting in error.
@@ -50,7 +58,8 @@ int main(){
         lower_bound - Return an iterator to lower bound (Public member function)
         uppper_bound - Return an iterator to upper bound (Public member functio)
     */
-    
+
+   
 
     //SET FUNCTIONS
 

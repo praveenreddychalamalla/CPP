@@ -13,6 +13,15 @@
 #define pi pair<int,int>
 #define FOR(i,a,b) for(int i=(a);i<(b);i++)
 using namespace std;
+
+/**
+  * Warning: If you want to use the upper_bound or lower_bound funtion for a map, 
+  * then use the public member functions upper_bound and lower_bound of map i.e., USE map.upper_bound(ele) or map.lower_bound(ele)
+  * These member functions works more efficiently than Generic Algorithms.
+  * Don't use the  upper_bound and lower_bound functions (Generic Algorithms) in std namespace.
+  * DON'T USE upper_bound(map.begin(),map.end(),ele) or  lower_bound(map.begin(),map.end(),ele). If used, you might stuck in TLE scenario
+*/
+
 /*
     Keys of a map are immutable but the values assigned to a key are mutable.
 

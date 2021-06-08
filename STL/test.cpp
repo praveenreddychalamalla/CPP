@@ -1,6 +1,6 @@
 /**
  * @author Praveen Reddy Chalamalla
- * @create date 2021-06-06 
+ * @create date 2021-06-08 
  */
 #include<bits/stdc++.h>
 #define mp make_pair
@@ -9,61 +9,40 @@
 #define S second
 #define pi pair<int,int>
 #define FOR(i,a,b) for(int i=(a);i<(b);i++)
+#define ll long long
 #define endl '\n'
 using namespace std;
-
-int maxArea(vector<pair<int,int>>& v, int n){
-  int area, max_area=0;
-  sort(v.begin(),v.end());
-  vector<pair<int,int>> left(n),right(n);
-  stack<int>st;
-  for(int i=0;i<n;i++){
-    if(st.empty()){
-      left[i]=make_pair(0,500);
-      st.push(i);
-    }
-    else{
-      while(!st.empty() && v[i].S<=v[st.top()].S) st.pop();
-      left[i]=st.empty()?make_pair(0,500):make_pair(v[st.top()].F,v[st.top()].S);
-      st.push(i);
-    }
-  }
-   while(!st.empty()) //Clear Stack
-    st.pop();
-  for(int i=n-1;i>=0;i--){
-    if(st.empty()){
-      right[i]=make_pair(100000,500);
-      st.push(i);
-    }
-    else{
-      while(!st.empty() && v[i].S<=v[st.top()].S) st.pop();
-      right[i]=st.empty()?make_pair(100000,500):make_pair(v[st.top()].F,v[st.top()].S);
-      st.push(i);
-    }
-  }
-  for(int i=0;i<n;i++){
-    area= (right[i].F-left[i].F)*v[i].S;
-    max_area=max(area,max_area);
-  }
-
-  max_area=max(max_area,v[0].F*500);
-  for(int i=1;i<n-1;i++){
-    max_area=max(max_area,(v[i].F-v[i-1].F)*500);
-  }
-  max_area=max(max_area,(100000-v[n-1].F)*500);
-  return max_area;
-}
+set<int>s;
 void solve(){
-  int n,x,y;
-  cin>>n;
-  vector<pair<int,int>> v;
-  for(int i=0;i<n;i++){
-    cin>>x>>y;
-    v.push_back({x,y});
+  int n,q;
+  cin>>n>>q;
+  vector<int>a(n+1);
+  for(int i=1;i<=n;i++)cin>>a[i];
+  s.insert(1);
+  for(int i=2;i<=n;i++){
+    if(a[i]%a[i-1]!=0)s.insert(i);
   }
-  cout<<maxArea(v,n);
+  while(q--){
+    int c,i,x;
+    cin>>c>>i;
+    if(c==1){ 
+      cin>>x;
+      a[i]=x;
+      s.insert(i);
+      if(i+1<=n) s.insert(i+1);
+      if(i+1<=n && a[i+1]%a[i]==0)s.erase(i+1);
+      if(i-1>0 && a[i]%a[i-1]==0)s.erase(i);
+    }
+    else {
+      auto it=s.upper_bound(i);
+      it--;
+      cout<<*it<<endl;
+    }
+  }
 }
 int main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
   solve();
-	return 0;
+  return 0;
 }
