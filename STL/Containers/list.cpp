@@ -11,7 +11,7 @@ using namespace std;
 /*
     Lists will have Bi-directional iterators 
     Lists don't suppport random access iterators.
-    Hence we cannot perform arithmetic like it+k or it-k on iterators to lists. You should not use sth like list[5].
+    Hence we cannot perform arithmetic like it+k or it-k on iterators to lists. You should not use sth like list[i].
     Lists are sequences of elements stored in a linked list.
     Compared to vectors, they allow fast insertions and deletions, but doesn't support random access
 */

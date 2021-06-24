@@ -30,9 +30,9 @@ During object creation, memory has to be alloted.
 
 For allocating memory, the variable has to be binded with data type. Hence, it is must to specify the data types for templates (in angular brackets<>) 
 */
-    Calculator <int>obj1(1,3); //As you have used only one template, one data type <int> is mentioned. For obj1 you define T to be an int.
+    Calculator <int>obj1(1,3); //As you have used only one template, one data type <int> is mentioned. For obj1 you defined T to be an int.
 
-    Calculator <float>obj2(1.5,2.5); //For obj2 you define T to be a float.
+    Calculator <float>obj2(1.5,2.5); //For obj2 you defined T to be a float.
     cout<< obj1.add()<<endl;
     cout<<obj2.multiply()<<endl;
     return 0;
