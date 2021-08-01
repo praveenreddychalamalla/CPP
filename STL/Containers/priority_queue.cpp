@@ -11,7 +11,7 @@ using namespace std;
 /*  
     Note: Iterators cannot be created for priority queues. Queues & Stacks doesn't support any kind of iterators. Dequeue suppport iteratos.
 
-    Unlike Vectors or lists, in Queue containers(Stack, Queue, Priority) 
+    Unlike Vectors or lists, in Queue containers(Stack, Queue, Priority Queue) 
     front will be pointing to end and back will be pointing to beginning.  Elements are pushed from back(beginning) and popped from front (end)
     Assuming an imaginary linear container, elements are pushed from left and popped from right
     Priority queues are internally implemented as heaps.
@@ -83,7 +83,7 @@ int main(){
 
     priority_queue<int,vector<int>,Compare1> pq2; 
 
-    /*Here instead of Compare class,you can use greater class template where operator() is overloaded exactly same as that of Compare here.
+    /*Here instead of Compare class, you can use greater class template where operator() is overloaded exactly same as that of Compare here.
       priority_queue<int,vector<int>,greater<int>> pq2; works fine.
       But for other logics of defining priority,  Compare has to be implemented accordingly*/
     pq2.push(10);pq2.push(5);pq2.push(15);pq2.push(12);

@@ -33,6 +33,10 @@ int main()
     //Creates a vector with space for num objects. If val is specified, each of those objects will be given that value.
 
     vector<int>v3(5,1); //Creates a vector v3 of size 5 and each element of v3 will be 1.
+	
+    int n=1000;
+	  vector<vector<int>> arr(n, vector<int> (n,0)); // arr is Vector of vectors, where each vector is initialized with zeroes having size as n. It is equivalent to n x n 2D Array initialized with zeroes.
+	
     vector<int>v4(5);  //Creates a vector v3 of size 5 and each element of v3 will be some garbage value
    
     /*vector(input_iterator start, input_iterator end)

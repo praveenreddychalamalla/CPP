@@ -14,36 +14,39 @@
 #define endl '\n'
 #define mod ((long long int)1e9+7)
 using namespace std;
-bool comp(pair<ll int,ll int> a, pair<ll int,ll int> b){
-  if(a.F==b.F)return a.S<b.S;
-  return a.F<b.F; 
-}
+
 void solve(){
- ll int n,d;
- cin>>n>>d;
- ll int p[n],s[n];
- FOR(i,0,n)cin>>p[i];
- FOR(i,0,n)cin>>s[i];
- vector<pair<ll int, ll int>>v(n);
- FOR(i,0,n){
-   v[i]={s[i],p[i]};
+ int n,k;
+ cin>>n>>k;
+ vector<int> a(n,0);
+ for(int i=0;i<n;i++)cin>>a[i];
+ if(k==n){
+   cout<<0<<endl;
+   return ;
  }
- sort(all(v),comp);
- ll int ans=0;
- int i=0,j=n-1;
- 
- while(i<j){
-   if(v[i].S+v[j].S<=d){
-     ans=max(ans,v[i].F+v[j].F);
-     i++;
+ vector<int>dp(n,0);
+ queue<int>q;
+ map<int,int>m;
+ for(int i=0;i<n;i++){
+   if(q.size()<=k){
+     m[a[i]]++;
+     q.push(a[i]);
+     dp[i]=a[i];
    }
-   else {
-     if(v[j].S<=d)ans=max(ans,v[j].F);
-     j--;
+   else{
+     dp[i]=a[i]+(m.begin())->first;
+     m[q.front()]--;
+     if(m[q.front()]==0)m.erase(q.front());
+     q.pop();
+     q.push(a[i]);
+     m[a[i]]++;
    }
+ }
+ int ans=INT_MAX;
+ for(int i=n-k-1;i<n;i++){
+    ans=min(ans,dp[i]);
  }
  cout<<ans<<endl;
-
 }
 
 int main() {
